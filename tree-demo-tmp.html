@@ -1,13 +1,29 @@
 <head>
-  <title>tree-demo-tmp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<title>philippspo:tree</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<template name="layout">
 
-  {{> hello}}
-</body>
+	<div class="wrapper">
+		<article class="main">
+			{{>yield}}
+		</article>
+		<aside class="aside aside-1">
+			{{>yield region="aside"}}
+		</aside>
+	</div>
+</template>
 
-<template name="hello">
-	{{>tree collection=nodes}}
+<template name="tree">
+	{{>planificaTree collection=nodes rootNode=rootNode routeParam="nodeId"}}
+</template>
+
+<template name="node">
+	{{title}}
+</template>
+
+
+<template name="root">
+	Projekt A
 </template>
