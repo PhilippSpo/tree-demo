@@ -1,0 +1,13 @@
+<head>
+  <title>tree-demo-tmp</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+	{{>tree collection=nodes}}
+</template>
