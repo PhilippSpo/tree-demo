@@ -8,9 +8,10 @@ meteor-platform
 autopublish
 insecure
 philippspo:tree
-fourseven:scss@1.0.0
+fourseven:scss
 meteoric:ionicons-sass
 stevezhu:lodash
 fastclick
 iron:router
 mquandalle:stylus
+fortawesome:fontawesome
