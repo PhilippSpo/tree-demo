@@ -28,6 +28,9 @@ if (Meteor.isClient) {
 Nodes = new Meteor.Collection('nodes');
 
 if (Meteor.isServer) {
+  Meteor.publish('nodes', function() {
+    return Nodes.find();
+  });
   Meteor.startup(function() {
     // code to run on server at startup
     if (Nodes.find().count() === 0) {
